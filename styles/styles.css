@@ -1,0 +1,42 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-image: url("/images/header_banner.jpg");
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 75px;
+    color: white;
+
+}
+
+h2.subtitle {
+    font-size: 50px;
+}
+
+h3.subtitle {
+    font-size: 30px;
+}
+
+.pets_section,
+.favorite_images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+img {
+    height: 400px;
+}
+
+p {
+    text-align: center;
+}
