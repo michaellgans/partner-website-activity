@@ -1,42 +1,101 @@
-body {
-    background-color: lightblue;
-}
-
 header {
-    background-image: url("/images/header_banner.jpg");
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(226, 69, 226);
+}
+
+body {
+    padding-top: 100px;
+    margin: 0;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero_section {
+    background-color: rgb(243, 242, 242);
 }
 
 .title {
     text-align: center;
     font-size: 75px;
-    color: white;
-
 }
 
-h2.subtitle {
+.greeting {
+    text-align: center;
     font-size: 50px;
 }
 
+p {
+    font-size: x-large;
+    text-align: center;
+    line-height: 30px;
+}
+
+li {
+    font-size: larger;
+}
+
+h2.subtitle {
+    font-size: 70px;
+    text-align: center;
+}
+
 h3.subtitle {
-    font-size: 30px;
+    font-size: 40px;
+    margin: 0px;
 }
 
-.pets_section,
-.favorite_images {
+.favorites, .michael_favorites, .nikki_favorites {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+    align-items: center;
 }
 
+.michael_favorites, .nikki_favorites {
+    flex-direction: column;
+}
 
+.images_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+ol {
+    padding-bottom: 50px;
+}
 
 img {
-    height: 400px;
+    height: 200px;
+    border-radius: 200px;
+    border: 5px solid black;
+    margin: 20px;
 }
 
-p {
-    text-align: center;
+footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(226, 69, 226);
 }
